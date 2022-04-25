@@ -1,4 +1,4 @@
 # calculator
 A calculator created as part of The Odin Project
 
-https://ashmaddenweb.github.io/calculator/
+View it live here: https://ashmaddenweb.github.io/calculator/
