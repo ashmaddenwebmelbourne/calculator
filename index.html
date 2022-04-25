@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section>
+      <div class="calculator-outer">
+        <div class="calculator-group">
+          <div class="calculator-screen-group">
+            <div>
+              <div class="calculator-screen-top">
+                <p id="screen-input" class="screen-display answer-display">0</p>
+              </div>
+              <div class="calculator-screen-bottom">
+                <p id="screen-output" class="screen-display">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-button-group-outer">
+            <div class="calculator-button-group-1">
+              <div class="calculator-button-group-2">
+                <div>
+                  <button id="ac" class="calc-button">AC</button>
+                  <button id="divide" class="calc-button">÷</button>
+                  <button id="multiply" class="calc-button">×</button>
+                </div>
+                <div>
+                  <button id="7" class="calc-button">7</button>
+                  <button id="8" class="calc-button">8</button>
+                  <button id="9" class="calc-button">9</button>
+                </div>
+              </div>
+              <div class="calculator-button-group-3">
+                <button id="minus" class="calc-button calc-button-vertical">-</button>
+              </div>
+            </div>
+            <div class="calculator-button-group-1">
+              <div class="calculator-button-group-2">
+                <div>
+                  <button id="4" class="calc-button">4</button>
+                  <button id="5" class="calc-button">5</button>
+                  <button id="6" class="calc-button">6</button>
+                </div>
+                <div>
+                  <button id="1" class="calc-button">1</button>
+                  <button id="2" class="calc-button">2</button>
+                  <button id="3" class="calc-button">3</button>
+                </div>
+              </div>
+              <div class="calculator-button-group-3">
+                <button id="plus" class="calc-button calc-button-vertical">+</button>
+              </div>
+            </div>
+            <div class="calculator-button-group-bottom">
+              <div>
+                <button id="0" class="calc-button">0</button>
+                <button id="decimal" class="calc-button">.</button>
+              </div>
+              <button id="equal" class="calc-button calc-button-horizontal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

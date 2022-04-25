@@ -1,0 +1,147 @@
+html {
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+body{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+p{
+    font-size: 20px;
+    color: #29271B;
+    font-family: 'Press Start 2P', cursive;
+}
+.calculator-outer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: auto;
+    background-color: #292929;
+    border-radius: 20px;
+}
+.calculator-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator-screen-group{
+    border-top: 10px solid #212121;
+    border-left: 8px solid #333333;
+    margin: 30px 0px 20px 0px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #94978C;
+    height: 150px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: ltr;
+}
+.screen-display{
+    border-left: 30px solid #94978C;
+    border-right: 30px solid #94978C;
+    overflow-x: scroll;
+    white-space:nowrap;
+    max-width: 300px;
+}
+
+.calculator-button-group-outer{
+    width: 100%;
+}
+.calculator-button-group-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.calculator-button-group-3{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.calculator-button-group-bottom{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+.calc-button{
+    border: none;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    background: #292929;
+    -webkit-box-shadow: 8px 8px 6px #151515, -3px -3px 3px #313131;
+    box-shadow: 8px 8px 6px #151515, -3px -3px 3px #313131;
+    margin-bottom: 9px;
+}
+.calc-button:active{
+    background: linear-gradient(145deg, #252525, #2c2c2c);
+    box-shadow: 6px 6px 10px #1a1a1a;
+}
+.calc-button-vertical{
+    height: 100%;
+    border-radius: 50px;
+}
+.calc-button-horizontal{
+    border-radius: 50px;
+    flex-grow: 1;
+    margin-left: 9px;
+}
+@media only screen and (max-width: 440px) {
+    p{
+        font-size: 15px;
+    }
+
+    .calculator-outer{
+        width: 85vw;
+   }
+    .calc-button{
+        margin: 3px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 11px;
+   }
+    .calc-button-vertical{
+        height: 100%;
+   }
+    .calc-button-horizontal{
+        margin-left: 11px;
+   }
+    .screen-display{
+        max-width: 200px;
+   }
+}
+@media only screen and (max-width: 355px) {
+    .calculator-outer{
+        width: 95vw;
+   }
+    .calc-button{
+        margin: 4px 3px 0px 3px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 13px;
+   }
+    .calc-button-vertical{
+        height: 100%;
+   }
+    .calc-button-horizontal{
+        margin-left: 13px;
+   }
+}
