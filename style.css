@@ -54,6 +54,7 @@ p{
     border-left: 30px solid #94978C;
     border-right: 30px solid #94978C;
     overflow-x: scroll;
+    scrollbar-width: none;
     white-space:nowrap;
     max-width: 300px;
 }
